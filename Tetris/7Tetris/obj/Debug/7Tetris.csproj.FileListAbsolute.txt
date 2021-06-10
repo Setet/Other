@@ -1,0 +1,17 @@
+C:\Програмирование\1C#\7Tetris\7Tetris\obj\Debug\ResolveAssemblyReference.cache
+C:\Програмирование\1C#\7Tetris\7Tetris\obj\Debug\_7Tetris.Form1.resources
+C:\Програмирование\1C#\7Tetris\7Tetris\obj\Debug\_7Tetris.Properties.Resources.resources
+C:\Програмирование\1C#\7Tetris\7Tetris\obj\Debug\7Tetris.csproj.GenerateResource.Cache
+C:\Програмирование\1C#\7Tetris\7Tetris\bin\Debug\7Tetris.exe
+C:\Програмирование\1C#\7Tetris\7Tetris\bin\Debug\7Tetris.pdb
+C:\Програмирование\1C#\7Tetris\7Tetris\obj\Debug\7Tetris.exe
+C:\Програмирование\1C#\7Tetris\7Tetris\obj\Debug\7Tetris.pdb
+C:\Users\user\Desktop\7Tetris\7Tetris\bin\Debug\7Tetris.exe
+C:\Users\user\Desktop\7Tetris\7Tetris\bin\Debug\7Tetris.pdb
+C:\Users\user\Desktop\7Tetris\7Tetris\obj\Debug\7Tetris.csprojAssemblyReference.cache
+C:\Users\user\Desktop\7Tetris\7Tetris\obj\Debug\_7Tetris.Form1.resources
+C:\Users\user\Desktop\7Tetris\7Tetris\obj\Debug\_7Tetris.Properties.Resources.resources
+C:\Users\user\Desktop\7Tetris\7Tetris\obj\Debug\7Tetris.csproj.GenerateResource.cache
+C:\Users\user\Desktop\7Tetris\7Tetris\obj\Debug\7Tetris.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\7Tetris\7Tetris\obj\Debug\7Tetris.exe
+C:\Users\user\Desktop\7Tetris\7Tetris\obj\Debug\7Tetris.pdb
