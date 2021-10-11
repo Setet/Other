@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Password
@@ -13,18 +12,18 @@ namespace Password
             AutoSize = true;
             MaximizeBox = false;
             FormBorderStyle = FormBorderStyle.Fixed3D;
-            label4.Text = "По умолчанию алфавит состоит из\n английского алфавита нижнего регистра";
         }
 
-        void RAND_Me(int n)
+        void RANDOM(int n)
         {
             string password = "";
-            string symbol = "qwertyuiopasdfghjklzxcvbnm";
-            if (checkBox4.Checked)
+            string symbol = "";
+            
+            if (radioButton1.Checked)
             {
                 symbol = "0123456789";
             }
-            if (checkBox5.Checked)
+            if (radioButton2.Checked)
             {
                 symbol = "qwertyuiopasdfghjklzxcvbnm"; 
             }
@@ -51,10 +50,18 @@ namespace Password
             textBox3.Text = password;
         }
 
-        void RAND_Not_me(int n)
+        void RANDOM_Not_me(int n)
         {
             string password = "";
-            string symbol = "qwertyuiopasdfghjklzxcvbnm";
+            string symbol = "";
+            if (radioButton1.Checked)
+            {
+                symbol = "0123456789";
+            }
+            if (radioButton2.Checked)
+            {
+                symbol = "qwertyuiopasdfghjklzxcvbnm";
+            }
             if (checkBox1.Checked)
             {
                 symbol += symbol.ToUpper();//использовать заглавные
@@ -66,10 +73,6 @@ namespace Password
             if (checkBox3.Checked)
             {
                 symbol += "0123456789";//использовать цифры
-            }
-            if (checkBox4.Checked)
-            {
-                symbol = "0123456789";//использовать цифры
             }
             Random rnd = new Random();
             for (int i = 0; i < n; i++)
@@ -83,8 +86,15 @@ namespace Password
         {
             int n = Convert.ToInt32(comboBox1.Text);
 
-            RAND_Not_me(n);
-            RAND_Me(n);
+            if ((radioButton1.Checked || radioButton2.Checked)==false)
+            {
+                MessageBox.Show("Вы не выбрали формат пароля!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                RANDOM_Not_me(n);
+                RANDOM(n);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
