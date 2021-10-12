@@ -30,5 +30,12 @@ namespace Password
             newForm.Owner = this;
             newForm.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Reference_Form_1 newForm = new Reference_Form_1();
+            newForm.Owner = this;
+            newForm.Show();
+        }
     }
 }

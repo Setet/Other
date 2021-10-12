@@ -60,7 +60,7 @@ namespace Password
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
 
-            string path = @"1.txt";
+            string path = @"dictionary.txt";
             int k = 0;
 
             // Open the file to read from.
@@ -88,17 +88,19 @@ namespace Password
                 if (result == DialogResult.Yes)
                 {
                     File.AppendAllText(path, password + "\n");
+                    MessageBox.Show("Пароль добавлен в словарь.","Собщение",MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else
             {
                 MessageBox.Show("Пароль вскрыт за : " + ts.Hours + " часов " + ts.Minutes +
                     " минут " + ts.Seconds + " секунды " + ts.Milliseconds + " микро.секунд" + ".", "Сообщение");
+
                 string elapsedTime = Convert.ToString(ts.TotalSeconds);
                 double time = Convert.ToDouble(elapsedTime);
                 Hack_list.Add(password.Length, time);
                 string elapsedTime2 = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds);//Формат времени секндомера
-                richTextBox1.Text += "Дейстивие " + cout + " : " + button1.Text + ".Время : " + elapsedTime2 + "\n";
+                richTextBox1.Text += "Подбор " + cout + " : " + button1.Text + ".Время : " + elapsedTime2 + "\n";
                 cout++;
             }
         }
@@ -134,7 +136,7 @@ namespace Password
                         double time = Convert.ToDouble(elapsedTime);
                         Hack_list.Add(password.Length, time);
                         string elapsedTime2 = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds);//Формат времени секндомера
-                        richTextBox1.Text += "Дейстивие " + cout + " : " + button1.Text + ".Время : " + elapsedTime2 + "\n";
+                        richTextBox1.Text += "Подбор " + cout + " : " + button1.Text + ".Время : " + elapsedTime2 + "\n";
                         cout++;
                         p++;
                         break;
@@ -168,16 +170,9 @@ namespace Password
 
         private void button2_Click(object sender, EventArgs e)//маска
         {
-            string password = textBox1.Text;
-
-            Stopwatch stopWatch = new Stopwatch();
-            stopWatch.Start();
-
-            //Hack_2(password);
-
-            stopWatch.Stop();
-            TimeSpan ts = stopWatch.Elapsed;
-            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds);
+            Selection_by_Mask_Form newForm = new Selection_by_Mask_Form();
+            newForm.Owner = this;
+            newForm.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)//перебор
@@ -192,7 +187,6 @@ namespace Password
             zMain.GraphPane.CurveList.Clear();
 
             LineItem Hack_Curve = paneMain.AddCurve("Hack", Hack_list, Color.Black, SymbolType.None);
-
 
             zMain.AxisChange();
             zMain.Invalidate();
