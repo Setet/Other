@@ -1,0 +1,13 @@
+C:\Users\Setet\Desktop\Caesar\Caesar\bin\Debug\Caesar.exe.config
+C:\Users\Setet\Desktop\Caesar\Caesar\bin\Debug\Caesar.exe
+C:\Users\Setet\Desktop\Caesar\Caesar\bin\Debug\Caesar.pdb
+C:\Users\Setet\Desktop\Caesar\Caesar\obj\Debug\Caesar.csproj.AssemblyReference.cache
+C:\Users\Setet\Desktop\Caesar\Caesar\obj\Debug\Caesar.csproj.SuggestedBindingRedirects.cache
+C:\Users\Setet\Desktop\Caesar\Caesar\obj\Debug\Caesar.Form1.resources
+C:\Users\Setet\Desktop\Caesar\Caesar\obj\Debug\Caesar.Properties.Resources.resources
+C:\Users\Setet\Desktop\Caesar\Caesar\obj\Debug\Caesar.csproj.GenerateResource.cache
+C:\Users\Setet\Desktop\Caesar\Caesar\obj\Debug\Caesar.csproj.CoreCompileInputs.cache
+C:\Users\Setet\Desktop\Caesar\Caesar\obj\Debug\Caesar.exe
+C:\Users\Setet\Desktop\Caesar\Caesar\obj\Debug\Caesar.pdb
+C:\Users\Setet\Desktop\Caesar\Caesar\obj\Debug\Caesar.Reference_Form_1.resources
+C:\Users\Setet\Desktop\Caesar\Caesar\obj\Debug\Caesar.Reference_Form_2.resources
