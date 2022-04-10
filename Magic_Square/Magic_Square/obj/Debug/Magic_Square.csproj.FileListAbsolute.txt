@@ -1,0 +1,12 @@
+C:\Users\Setet\Desktop\Magic_Square\Magic_Square\bin\Debug\Magic_Square.exe.config
+C:\Users\Setet\Desktop\Magic_Square\Magic_Square\bin\Debug\Magic_Square.exe
+C:\Users\Setet\Desktop\Magic_Square\Magic_Square\bin\Debug\Magic_Square.pdb
+C:\Users\Setet\Desktop\Magic_Square\Magic_Square\obj\Debug\Magic_Square.csproj.AssemblyReference.cache
+C:\Users\Setet\Desktop\Magic_Square\Magic_Square\obj\Debug\Magic_Square.csproj.SuggestedBindingRedirects.cache
+C:\Users\Setet\Desktop\Magic_Square\Magic_Square\obj\Debug\Magic_Square.Properties.Resources.resources
+C:\Users\Setet\Desktop\Magic_Square\Magic_Square\obj\Debug\Magic_Square.csproj.GenerateResource.cache
+C:\Users\Setet\Desktop\Magic_Square\Magic_Square\obj\Debug\Magic_Square.csproj.CoreCompileInputs.cache
+C:\Users\Setet\Desktop\Magic_Square\Magic_Square\obj\Debug\Magic_Square.exe
+C:\Users\Setet\Desktop\Magic_Square\Magic_Square\obj\Debug\Magic_Square.pdb
+C:\Users\Setet\Desktop\Magic_Square\Magic_Square\obj\Debug\Magic_Square.Main_Form.resources
+C:\Users\Setet\Desktop\Magic_Square\Magic_Square\obj\Debug\Magic_Square.Titul.resources
