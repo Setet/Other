@@ -71,7 +71,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(121, 19);
             this.label9.TabIndex = 8;
-            this.label9.Text = "Краснодар 2021";
+            this.label9.Text = "Краснодар 2022";
             // 
             // label8
             // 
@@ -79,9 +79,9 @@
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.Location = new System.Drawing.Point(156, 267);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(267, 19);
+            this.label8.Size = new System.Drawing.Size(229, 19);
             this.label8.TabIndex = 7;
-            this.label8.Text = "Для преподователя :  Чернухи Ю.В";
+            this.label8.Text = "Руководителю :  Чернуха Ю.В";
             // 
             // label7
             // 
