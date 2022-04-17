@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c2aeb1aa-d4b2-4de4-a956-f18be53bc9cb": {
+      "ProjectGuid": "c2aeb1aa-d4b2-4de4-a956-f18be53bc9cb",
+      "DisplayName": "Diffie-Hellman algorithm",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
