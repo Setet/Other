@@ -5,13 +5,16 @@ from binascii import unhexlify, hexlify
 
 class Block:
     def __init__(self, prev_hash, trans, amount):
+        current_date = datetime.datetime.now()
+        dt = current_date.strftime("%d-%m-%Y %H:%M:%S")
+
         self.next = None
         self.__data = {
             "prev_hash": prev_hash,
             "trans": trans,
             "amount": amount,
-            "hash now": "",
-            "time now": datetime.datetime.now().time()
+            "hash": "",
+            "time": dt
         }
 
         self.__data["hash"] = self.make_hash()
@@ -21,8 +24,7 @@ class Block:
 
     def make_hash(self):
         test_hash = hexlify(hashlib.sha256(unhexlify(self.get_data()["prev_hash"])).digest()).decode("utf-8")
-        print("Симуляция процесса майнинга \n")
-        while test_hash[:3] != "000":
+        while test_hash[:5] != "00000":
             test_hash = hexlify(hashlib.sha256(unhexlify(test_hash)).digest()).decode("utf-8")
             print(test_hash)
         return test_hash
@@ -45,8 +47,9 @@ def print_block(block):
 
 
 def main():
-    test_block = Block("0004a62d480d68f4b969f5650b8c24ef77967484a6deced71e36dbc494054555", 'Артём', 100)
-    test_block.append("Никита", 1000)
+    first_hash = "000006c4e540ac98650aff319a600d87cb150b2b0c8d8b188f30fec7dc8b5ecf"
+    test_block = Block(first_hash, 'Артём', 100)
+    test_block.append("Никита", 128)
     test_block.append("Давид", 42)
     print_block(test_block)
 
