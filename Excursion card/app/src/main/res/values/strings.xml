@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Экскурсионная карта</string>
+    <string name="action_settings">Настройки</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Первый фрагмент</string>
+    <string name="second_fragment_label">Последний фрагмент</string>
+    <string name="next">Следующий</string>
+    <string name="previous">Приведущий</string>
+
+    <string name="hello_first_fragment">Привет первый фрагмент</string>
+    <string name="hello_second_fragment">Здравствуй, второй фрагмент. Аргумент: %1$s</string>
+    <string name="title">Заголовок</string>
+    <string name="description">Описание</string>
+</resources>
