@@ -1,0 +1,19 @@
+{
+    "orders": [
+        {
+            "id": 1,
+            "dish": "Мал.шаурма",
+            "status": true
+        },
+        {
+            "id": 2,
+            "dish": "Сред.шаурма",
+            "status": false
+        },
+        {
+            "id": 3,
+            "dish": "Сред.шаурма",
+            "status": false
+        }
+    ]
+}
