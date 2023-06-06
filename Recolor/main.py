@@ -2,7 +2,7 @@ from PIL import Image, ImageTk
 import numpy as np
 from sklearn.cluster import KMeans
 import tkinter as tk
-from tkinter import filedialog, simpledialog
+from tkinter import filedialog
 import tkinter.messagebox as mb
 
 
