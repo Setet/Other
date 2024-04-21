@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Парсер</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .article {
+            border: 1px solid #ccc;
+            padding: 1rem;
+            border-radius: 5px;
+            line-height: 1.5rem;
+        }
+
+        .title {
+            font-weight: bold;
+        }
+
+        .author,
+        .description {
+            font-style: italic;
+        }
+
+        .article-text {
+            margin-top: 1rem;
+        }
+
+        .source-link {
+            text-align: right;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    {% for article in data %}
+    <div class="article">
+        <p class="id"><strong>ID:</strong> {{ article[0] }}</p>
+        <p class="title"><strong>Заголовок:</strong> {{ article[1] }}</p>
+        <p class="author"><strong>Автор:</strong> {{ article[2] }}</p>
+        <p class="description"><strong>Анатация:</strong> {{ article[3] }}</p>
+        <div class="article-text">
+            <p><strong>Текст статьи:</strong></p>
+            <p>{{ article[4] }}</p>
+        </div>
+        <p class="coincidences"><strong>Техническая:</strong> {{ article[6] }}</p>
+        <p class="source-link"><strong>Ссылка:</strong> <a href="{{ article[5] }}">{{ article[5] }}</a></p>
+    </div>
+    {% endfor %}
+</div>
+</body>
+</html>
